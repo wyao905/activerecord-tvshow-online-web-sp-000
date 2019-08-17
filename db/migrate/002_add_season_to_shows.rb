@@ -1,1 +1,1 @@
-class AddSeason
+class AddSeason < ActiveRecords
