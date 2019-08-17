@@ -1,1 +1,1 @@
-class AddSeason < ActiveRecord::Migration[]
+class AddSeason < ActiveRecord::Migration[55.1]
