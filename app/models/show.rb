@@ -15,15 +15,15 @@ class Show < ActiveRecord::Base
     self.where("rating = ?", self.lowest_rating).first
   end
   
-  def ratings_sum
+  def self.ratings_sum
     self.sum(:rating)
   end
   
-  def popular_shows
+  def self.popular_shows
     self.where("rating > ?", 5)
   end
   
-  def shows_by_alphabetical_order
+  def self.shows_by_alphabetical_order
     self.order(:name)
   end
 end
